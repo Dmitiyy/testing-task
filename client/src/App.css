@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #222831;
+}
+
+html {
+  font-family: 'Karla', sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 30px auto;
+}
+
+.container h1 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.cards {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+
+.cards__item {
+  width: 100%;
+  padding: 15px;
+  background-color: #393E46;
+  border-radius: 15px;
+  box-shadow: 0px 4px 30px -10px rgba(0, 0, 0, 0.25);
+}
+
+.cards__item img {
+  width: 100%;
+  border-radius: 7px;
+}
+
+.cards__btns {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cards__btns h3 {
+  color: #fff;
+  font-size: 17px;
+  width: 170px;
+}
+
+.cards__btns button {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background: #fff;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards__btns button svg {
+  width: 18px;
+  height: 18px;
+  transform: rotate(-90deg);
+}
+
+/* pagination */
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pagination__controls {
+  display: flex;
+  align-items: center;
+}
+
+.prev {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background: #fff;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.disabled {
+  opacity: 0.1;
+  cursor: default !important;
+}
+.error {
+  color: rgb(228, 130, 135);
+}
+.loading {
+  width: 100px;
+}
+
+.loading-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.prev svg {
+  width: 18px;
+  height: 18px;
+  transform: rotate(90deg);
+}
+.next svg {
+  width: 18px;
+  height: 18px;
+  transform: rotate(-90deg);
+}
+
+.pagination__controls h3 {
+  font-size: 18px;
+  color: #fff;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.next {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background: #fff;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
